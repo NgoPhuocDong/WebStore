@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{9EC723D5-53B7-44B2-9FE1-E8ACD67F5971}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.WebStore PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebStore/Program.cs">
+    <Files>
+      <File FileName="WebStore/Controllers/HomeController.cs" />
+      <File FileName="WebStore/Controllers/ProductController.cs" Line="114" Column="22" />
+      <File FileName="WebStore/Properties/launchSettings.json" />
+      <File FileName="WebStore/Program.cs" Line="13" Column="27" />
+      <File FileName="WebStore/Views/Product/Create.cshtml" />
+      <File FileName="WebStore/Views/Home/Index.cshtml" />
+      <File FileName="WebStore/Views/Product/Index.cshtml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebStore" expanded="True">
+            <Node name="WebStore" expanded="True">
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Product" expanded="True" />
+              </Node>
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

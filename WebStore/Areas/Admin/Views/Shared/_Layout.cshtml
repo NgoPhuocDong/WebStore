@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - MvcCore</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebStore.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/open-iconic/font/css/open-iconic-bootstrap.min.css" />
+</head>
+<body>
+    <div class="page">
+        <div class="sidebar">
+            <NavMenu />
+            <div class="navtop-row ps-3 navbar navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="">Blazor Asset</a>
+                    <button title="Navigation menu" class="navbar-toggler">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-scrollable">
+                <nav class="flex-column">
+                    <div class="nav-item px-3">
+                        <a class="nav-link" href="">
+                            <span class="oi oi-home" aria-hidden="true"></span> Home
+                        </a>
+                    </div>
+                    <div class="nav-item px-3">
+                        <a class="nav-link" href="~/Admin/Category/Index">
+                            <span class="oi oi-home" aria-hidden="true"></span> Categorys
+                        </a>
+                    </div>
+                    <div class="nav-item px-3">
+                        <a class="nav-link" href="~/Admin/Product/Index">
+                            <span class="oi oi-home" aria-hidden="true"></span> Products
+                        </a>
+                    </div>
+                    <div class="nav-item px-3">
+                        <a class="nav-link" href="https://learn.microsoft.com/en-us/visualstudio/mac/blazor?view=vsmac-2022">
+                            <span class="oi oi-list-rich" aria-hidden="true"></span> Create blazor
+                        </a>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+
+        <main>
+            <div class="top-row px-4">
+                <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+            </div>
+
+            <article class="content px-4">
+                @RenderBody()
+            </article>
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - ASP.NET core MVC - <a asp-area="" asp-controller="" asp-action="">phuocdong</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+<style>
+    .nav-item a, .nav-item .nav-link {
+        text-decoration: none;
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+        .nav-item a:active {
+            background-color: rgba(255, 255, 255, 0.25);
+            color: white;
+        }
+
+        .nav-item a:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+        }
+</style>
+
